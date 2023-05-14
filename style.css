@@ -1,0 +1,147 @@
+
+body {
+  font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  background-color:#222222;
+  padding: 0;
+  margin: 0;
+  color : white;
+}
+
+.container{
+  box-shadow: 2px 2px 5px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  width: 60%;
+  height : 20%;
+  background-color: lightgrey;
+  opacity: 0.6;
+  box-shadow: 2px 2px 5px black;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.logo_container{
+  text-align: right;
+  width: 20%;
+  display:flex;
+  align-items: center;
+}
+
+.temp_container{
+  font-size: 2rem;
+  width: 20%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.town_container{
+  padding: 4%;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.town{
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: right;
+  opacity: 0.8;
+}
+
+#ville {
+  text-transform: capitalize;
+}
+
+#changeVille {
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+#changeVille::placeholder {
+  color: #2980B9;
+}
+
+.menu{
+  background-color: #617c8e;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height:40px;
+  top:0px;
+  left:0px;
+  opacity: 0.8;
+  margin:0px;
+  padding:0;
+}
+
+.burger{
+  color: white;
+  opacity: 0.8;
+}
+
+.changeTown{
+  position: fixed;
+  display: inline-block;
+  background-color: white;
+  opacity: 0;
+  width: 240px;
+  height: 50px;
+  top:4px;
+  left: 40px;
+  padding-left:20px;
+  padding-right:0px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  
+}
+
+.changeTownAnime {
+  animation-duration: 1000ms;
+  animation-name: fondu;
+  animation-timing-function: ease-in;
+  animation-delay: initial;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+
+#submit {
+  background: rgba(178, 223, 251, .3);
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+}
+
+@media screen and (max-width : 700px) {
+  .town{
+    font-size: 1rem;
+  }
+
+  .temp_container{
+    font-size: 0.8rem;
+  }
+}
