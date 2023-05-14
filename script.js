@@ -23,7 +23,7 @@ async function refreshWeather(town) {
       temperatureElement.textContent = donnees.data.main.temp;
       if (donnees.data.weather[0].main == "Clouds") {
         container.style.backgroundImage =
-          "url('images/bgclouds.jpg')";
+          "url('images/bgClouds.jpg')";
           logo.src = "images/cloudy.png";
           card.style.backgroundColor = "lightgrey";
         } else if (donnees.data.weather[0].main == "Clear") {
