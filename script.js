@@ -28,7 +28,7 @@ async function refreshWeather(town) {
           card.style.backgroundColor = "lightgrey";
         } else if (donnees.data.weather[0].main == "Clear") {
         container.style.backgroundImage =
-          "url('images/blueSky.jpeg')";
+          "url('images/blueSky.jpg')";
           logo.src = "images/sun.png";
           card.style.backgroundColor = "blue";
       }
